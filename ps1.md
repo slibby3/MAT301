@@ -120,7 +120,7 @@ FROM database.table;
 
 1. What does SQL stand for?  How is it pronounced?
 
-***`Standard Query Language, S.Q.L or sequel`***
+***`Structured Query Language, S.Q.L or sequel`***
 
 2. Are SQL commands case-sensitive?  How can you determine?
 
@@ -132,7 +132,11 @@ FROM database.table;
 
 4. True or False:  Is it necessary to use the `FROM` clause with the select statement? 
 
+***`True`***
+
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
+
+***`It is not necessary to use a WHERE clause in a DML statement. WHERE clauses are used when specifying result extraction and filtering records`***
 
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
 
