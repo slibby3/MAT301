@@ -124,11 +124,11 @@ FROM database.table;
 
 2. Are SQL commands case-sensitive?  How can you determine?
 
-***`SQL commands are case-insensitive, this can be determined by running the program. It will run with `***
+***`SQL commands are case-insensitive, this can be determined by running the program.`***
 
 3. What does DQL stand for?
 
-***`Descriptive Query Language`***
+***`Data Query Language`***
 
 4. True or False:  Is it necessary to use the `FROM` clause with the select statement? 
 
