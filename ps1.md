@@ -120,7 +120,7 @@ FROM database.table;
 
 1. What does SQL stand for?  How is it pronounced?
 
-`Standard Query Language, S.Q.L or sequel`
+`***Standard Query Language, S.Q.L or sequel***`
 
 2. Are SQL commands case-sensitive?  How can you determine?
 
