@@ -124,7 +124,7 @@ FROM database.table;
 
 2.Are SQL commands case-sensitive?  How can you determine?
 
-***`SQL commands are case-insensitive, this can be determined by running the program.`***
+***`SQL commands are case-insensitive in Windows, this can be determined by running the program.`***
 
 3.What does DQL stand for?
 
@@ -140,32 +140,63 @@ FROM database.table;
 
 6.What is the purpose of the `ORDER BY` clause?  What is its default value?  
 
-
+***`The ORDER BY clause orders records in ascending or descending order. The default value is ascending.`***
 
 7.Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
 
+***` `***
+
 8.Select all product names.
+
+```SQL
+SELECT * 
+FROM unemath_Libby.Products;
+```
 
 9.List the MSRP for all products in ascending order.
 
+***` `***
+
 10.Find all products within  category 430.  What is category 430?
+
+***` `***
 
 11.Find all product id and names in category 430 manufactured by 428.
 
+***` `***
+
 12.How many products in category 430 manufactured by 428?
+
+***` `***
 
 13.How many countries make products contained in the store?
 
+***` `***
+
 14.How many products are manufactured in the USA?
+
+***` `***
 
 15.How many products cost the company less than $10?
 
+***` `***
+
 16.How many products cost the company less than $10 and sell for more than $20?
+
+***` `***
 
 17.How many products cost the company less than $10 and sell for less than $20?
 
+***` `***
+
 18.Which products cost less than $10 and sell for more than $20?
+
+***` `***
 
 19.Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
 
+***` `***
+
 20.Create your own query.
+
+***` `***
