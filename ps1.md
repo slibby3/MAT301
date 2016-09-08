@@ -136,9 +136,10 @@ FROM database.table;
 
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
 
-***`It is not necessary to use a WHERE clause in a DML statement. WHERE clauses are used when specifying result extraction and filtering records`***
+***`It is not necessary to use a WHERE clause in a DML statement. WHERE clauses are used to limit the number of records returned by the query by filtering records to match a specified condition`***
 
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
+
 
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
 
