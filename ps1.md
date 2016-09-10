@@ -144,7 +144,7 @@ FROM database.table;
 
 7.Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
 
-***` `***
+***`The data in the products table is case insensitive. It should be insensitive, otherwise queries would have to be more specific to include the dataset.`***
 
 8.Select all product names.
 
@@ -181,36 +181,92 @@ WHERE category_id=430 AND manufacturer_id=428;
 
 12.How many products in category 430 manufactured by 428?
 
-***` `***
+```SQL
+SELECT COUNT(*)
+FROM unemath_Libby.Products
+WHERE category_id=430 AND manufacturer_id=428;
+```
+
+***`18 products`***
 
 13.How many countries make products contained in the store?
 
-***` `***
+```SQL
+SELECT COUNT(country) 
+FROM unemath_Libby.Products
+WHERE inventory>'0';
+```
+
+***`9443 countries`***
 
 14.How many products are manufactured in the USA?
 
-***` `***
+```SQL
+SELECT COUNT(*) 
+FROM unemath_Libby.Products
+WHERE country='USA';
+```
+
+***`4091 countries`***
 
 15.How many products cost the company less than $10?
 
-***` `***
+```SQL
+SELECT COUNT(*) 
+FROM unemath_Libby.Products
+WHERE price<'10';
+```
+
+***`7567 products`***
 
 16.How many products cost the company less than $10 and sell for more than $20?
 
-***` `***
+```SQL
+SELECT COUNT(*) 
+FROM unemath_Libby.Products
+WHERE price<'10' AND msrp>'20';
+```
+
+***`40 products`***
 
 17.How many products cost the company less than $10 and sell for less than $20?
 
-***` `***
+```SQL
+SELECT COUNT(*) 
+FROM unemath_Libby.Products
+WHERE price<'10' AND msrp<'20';
+```
+
+***`7523 products`***
+
 
 18.Which products cost less than $10 and sell for more than $20?
 
-***` `***
+```SQL
+SELECT * 
+FROM unemath_Libby.Products
+WHERE price<'10' AND msrp>'20';
+```
 
 19.Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
 
-***` `***
+```SQL
+SELECT COUNT(*) 
+FROM unemath_Libby.Products
+WHERE ship_weight<'1' OR ship_weight>'20';
+```
+
+***`1106 products`***
 
 20.Create your own query.
 
+***`List of names, MSRP, and cost of products that are in the store, manufactured in the USA, and cost the company more than $0.00 in descending order by MSRP`***
 
+```SQL
+SELECT name, msrp, price
+FROM unemath_Libby.Products
+WHERE inventory>'0' 
+AND country='USA' 
+AND price>'0.00'
+ORDER BY msrp DESC;
+```
