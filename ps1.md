@@ -158,48 +158,58 @@ FROM unemath_Libby.Products;
 ```SQL
 SELECT *
 FROM unemath_Libby.Products
-ORDER BY ;
+ORDER BY MSRP;
 ```
 
 10.Find all products within  category 430.  What is category 430?
 
+```SQL
+SELECT *
+FROM unemath_Libby.Products
+WHERE category_id=430;
+```
 
+***`Category 430 = wine glasses`***
 
 11.Find all product id and names in category 430 manufactured by 428.
 
-
+```SQL
+SELECT product_id, name
+FROM unemath_Libby.Products
+WHERE category_id=430 AND manufacturer_id=428;
+```
 
 12.How many products in category 430 manufactured by 428?
 
-
+***` `***
 
 13.How many countries make products contained in the store?
 
-
+***` `***
 
 14.How many products are manufactured in the USA?
 
-
+***` `***
 
 15.How many products cost the company less than $10?
 
-
+***` `***
 
 16.How many products cost the company less than $10 and sell for more than $20?
 
-
+***` `***
 
 17.How many products cost the company less than $10 and sell for less than $20?
 
-
+***` `***
 
 18.Which products cost less than $10 and sell for more than $20?
 
-
+***` `***
 
 19.Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
 
-
+***` `***
 
 20.Create your own query.
 
