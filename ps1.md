@@ -176,7 +176,8 @@ WHERE category_id=430;
 ```SQL
 SELECT product_id, name
 FROM unemath_Libby.Products
-WHERE category_id=430 AND manufacturer_id=428;
+WHERE category_id=430 
+AND manufacturer_id=428;
 ```
 
 12.How many products in category 430 manufactured by 428?
@@ -184,7 +185,8 @@ WHERE category_id=430 AND manufacturer_id=428;
 ```SQL
 SELECT COUNT(*)
 FROM unemath_Libby.Products
-WHERE category_id=430 AND manufacturer_id=428;
+WHERE category_id=430 
+AND manufacturer_id=428;
 ```
 
 ***`18 products`***
@@ -224,7 +226,8 @@ WHERE price<'10';
 ```SQL
 SELECT COUNT(*) 
 FROM unemath_Libby.Products
-WHERE price<'10' AND msrp>'20';
+WHERE price<'10' 
+AND msrp>'20';
 ```
 
 ***`40 products`***
@@ -234,7 +237,8 @@ WHERE price<'10' AND msrp>'20';
 ```SQL
 SELECT COUNT(*) 
 FROM unemath_Libby.Products
-WHERE price<'10' AND msrp<'20';
+WHERE price<'10' 
+AND msrp<'20';
 ```
 
 ***`7523 products`***
@@ -245,7 +249,8 @@ WHERE price<'10' AND msrp<'20';
 ```SQL
 SELECT * 
 FROM unemath_Libby.Products
-WHERE price<'10' AND msrp>'20';
+WHERE price<'10' 
+AND msrp>'20';
 ```
 
 19.Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
@@ -253,7 +258,8 @@ WHERE price<'10' AND msrp>'20';
 ```SQL
 SELECT COUNT(*) 
 FROM unemath_Libby.Products
-WHERE ship_weight<'1' OR ship_weight>'20';
+WHERE ship_weight<'1' 
+OR ship_weight>'20';
 ```
 
 ***`1106 products`***
