@@ -266,13 +266,13 @@ OR ship_weight>'20';
 
 20.Create your own query.
 
-***`List of names, MSRP, and cost of products that are in the store, manufactured in the USA, and cost the company more than $0.00 in descending order by MSRP`***
+***`List of names, MSRP, and cost of products that are in the store, manufactured in the USA, and doesn't cost the company $0.00 in descending order by MSRP`***
 
 ```SQL
 SELECT name, msrp, price
 FROM unemath_Libby.Products
 WHERE inventory>'0' 
 AND country='USA' 
-AND price>'0.00'
+AND price!='0.00'
 ORDER BY msrp DESC;
 ```
