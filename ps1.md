@@ -194,12 +194,11 @@ AND manufacturer_id=428;
 13.How many countries make products contained in the store?
 
 ```SQL
-SELECT COUNT(country) 
-FROM unemath_Libby.Products
-WHERE inventory>'0';
+SELECT COUNT(DISTINCT country) 
+FROM unemath_Libby.Products;
 ```
 
-***`9443 countries`***
+***`40 countries`***
 
 14.How many products are manufactured in the USA?
 
@@ -209,7 +208,7 @@ FROM unemath_Libby.Products
 WHERE country='USA';
 ```
 
-***`4091 countries`***
+***`4091 products`***
 
 15.How many products cost the company less than $10?
 
@@ -247,7 +246,7 @@ AND msrp<'20';
 18.Which products cost less than $10 and sell for more than $20?
 
 ```SQL
-SELECT * 
+SELECT name
 FROM unemath_Libby.Products
 WHERE price<'10' 
 AND msrp>'20';
@@ -266,7 +265,7 @@ OR ship_weight>'20';
 
 20.Create your own query.
 
-***`List of names, MSRP, and cost of products that are in the store, manufactured in the USA, and doesn't cost the company $0.00 in descending order by MSRP`***
+***`List of names, MSRP, and cost of products that are in the stock, manufactured in the USA, and doesn't cost the company $0.00 in descending order by MSRP`***
 
 ```SQL
 SELECT name, msrp, price
