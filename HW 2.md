@@ -157,20 +157,32 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 ===
 
+`*** Cost = 'price', price = msrp ***`
+
 1.Select all products (UPC) made in China whose price is less than $50.
 
 ```SQL
 SELECT upc
 FROM unemath_Libby.Products
 WHERE country='China'
-AND price<'50';
+AND msrp<'50';
 ```
 
 2.Find products with "bird bath" in the description.
 
-
+```SQL
+SELECT name, description
+FROM unemath_Libby.Products
+WHERE description LIKE 'bird bath%';
+```
 
 3.Find products whose cost is between $10 and $100.
+
+```SQL
+SELECT product_id, price
+FROM unemath_Libby.Products
+WHERE price BETWEEN 10 and 100;
+```
 
 4.Find products whose cost is less than or equal to $59.99.
 
