@@ -173,7 +173,7 @@ AND msrp<'50';
 ```SQL
 SELECT name, description
 FROM unemath_Libby.Products
-WHERE description LIKE 'bird bath%';
+WHERE description LIKE '%bird bath%';
 ```
 
 3.Find products whose cost is between $10 and $100.
