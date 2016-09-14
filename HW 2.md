@@ -216,6 +216,10 @@ AND product_id NOT IN(7483,4939,3452,9848,11293,12001)
 SELECT *
 FROM unemath_Libby.Products
 WHERE country IS NULL;
+
+SELECT *
+FROM unemath_Libby.Products
+WHERE country='';
 ```
 
 8.Calculuate the shipping volume and report it as 'Volume'.
