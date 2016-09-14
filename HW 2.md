@@ -186,47 +186,94 @@ WHERE price BETWEEN 10 and 100;
 
 4.Find products whose cost is less than or equal to $59.99.
 
-
+```SQL
+SELECT *
+FROM unemath_Libby.Products
+WHERE price<='59.99';
+```
 
 5.Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 
-
+```SQL
+SELECT name, product_id
+FROM unemath_Libby.Products
+WHERE product_id BETWEEN 5000 and 6000
+OR product_id IN(7483,4939,3452,9848,11293,12001);
+```
 
 6.Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 
-
+```SQL
+SELECT name, product_id
+FROM unemath_Libby.Products
+WHERE product_id NOT BETWEEN 5000 and 6000
+OR product_id NOT IN(7483,4939,3452,9848,11293,12001)
+```
 
 7.Find products whose country code is NULL.
 
-
+```SQL
+SELECT *
+FROM unemath_Libby.Products
+WHERE country IS NULL;
+```
 
 8.Calculuate the shipping volume and report it as 'Volume'.
 
-
+```SQL
+SELECT name, 
+ROUND(ship_depth*ship_width*ship_length,2) 
+AS volume
+FROM unemath_Libby.Products
+```
 
 9.Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
 
-
+```SQL
+SELECT name, 
+ROUND(1.75*1.35*price,2)
+AS 'sales price'
+FROM unemath_Libby.Products;
+```
 
 10.True or False: Both conditions when using the OR operator must be true.
 
-
+***`False`***
 
 11.What is the logical negation of the IN operator?
 
-
+***`NOT is the negation of the IN operator`***
 
 12.What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
 
-
+***`Should be: SELECT * FROM Products WHERE price BETWEEN 10 AND 100`***
 
 13.Select products with length less than 12 inches and sort decsending.
 
-
+```SQL
+SELECT name, length
+FROM unemath_Libby.Products 
+WHERE length<12
+ORDER BY length DESC;
+```
 
 14.How many products are there whose price is between $10 and $20?
 
+```SQL
+SELECT COUNT(*)
+FROM unemath_Libby.Products
+WHERE price BETWEEN 10 AND 20;
+```
 
+***`3226 products`***
 
 15.How many products are there made in China whose MSRP is between $10 and $20. 
 
+```SQL
+SELECT COUNT(*)
+FROM unemath_Libby.Products
+WHERE country='China'
+AND msrp BETWEEN 10 AND 20;
+```
+
+***`2189 products`***
