@@ -157,7 +157,7 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 ===
 
-`*** Cost = 'price', price = msrp ***`
+***` Cost = 'price', price = msrp `***
 
 1.Select all products (UPC) made in China whose price is less than $50.
 
