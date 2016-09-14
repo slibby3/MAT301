@@ -207,7 +207,7 @@ OR product_id IN(7483,4939,3452,9848,11293,12001);
 SELECT name, product_id
 FROM unemath_Libby.Products
 WHERE product_id NOT BETWEEN 5000 and 6000
-OR product_id NOT IN(7483,4939,3452,9848,11293,12001)
+AND product_id NOT IN(7483,4939,3452,9848,11293,12001)
 ```
 
 7.Find products whose country code is NULL.
