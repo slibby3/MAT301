@@ -2,7 +2,7 @@
 
 1.Define the terms: relation, tuple, attribute, record, and field.
 
-`***Relation*** - a table consisting of a set of tuples that can change over time`
+`Relation - a table consisting of a set of tuples that can change over time`
 `Tuple - rows of a relation with one component for each attribute`
 `Attribute - table columns`
 `Record - row of a table/relation`
@@ -33,6 +33,8 @@
 7.Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
 
 8.For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
+
+`The email could be a primary key because it uniquely identifies an individual. The disadvantage would be that email can change over time and become an orphan`
 
 9.Given two relations S and R below find the Cartsian Product S x R. 
 
