@@ -2,15 +2,11 @@
 
 1.Define the terms: relation, tuple, attribute, record, and field.
 
-`Relation - a table consisting of a set of tuples that can change over time
-
-Tuple - rows of a relation with one component for each attribute
-
-Attribute - table columns
-
-Record - row of a table/relation
-
-Field - column`
+`Relation - a table consisting of a set of tuples that can change over time`
+`Tuple - rows of a relation with one component for each attribute`
+`Attribute - table columns`
+`Record - row of a table/relation`
+`Field - column`
 
 2.What are keys in a relation?
 
