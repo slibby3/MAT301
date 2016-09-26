@@ -12,36 +12,59 @@ Field - column
 
 2.What are keys in a relation?
 
-`Keys in a relation are one or more attribute used to identify a record. Keys can be unique or nonunique, but unique is prefered.`
+```
+Keys in a relation are one or more attribute used to identify a record. Keys can be unique or nonunique, but unique is prefered.
+```
 
 3.What is a surrogate key and how is it used?
 
-`A surrogate key is a column made by an arbitary assignment of a key to a row. It can be an auto-incremented integer that has no meaning - this tends to be used in cases where private data is not prefered. It can serve as a way to ID individuals without using social security numbers, for example.`
+```
+A surrogate key is a column made by an arbitary assignment of a key to a row. It can be an auto-incremented integer that has no meaning - this tends to be used in cases where private data is not prefered. It can serve as a way to ID individuals without using social security numbers, for example.
+```
 
 4.In the following equation, Area = Length x Width, identify the determinant(s).
 
-`Length and width are the determinants.`
+```
+Length and width are the determinants.
+```
 
 5.If a relation has no duplicate data, how can you be sure there is always at least one primary key?
 
-`...`
+```
+...
+```
 
 6.Give an example of a relation.  Determine a natural key for this relation.
 
-`...`
+```
+...
+```
 
   For question 7 - 8, Consider product *orders*.  In particular, associated with an order is: customer name (first and last), address (street, city, state, zip), phone, email, the products orders (including item, quantity, and price).  
 
 7.Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
 
+```
+...
+```
+
 8.For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
 
-`The email could be a primary key because it uniquely identifies an individual. The disadvantage would be that email can change over time and become an orphan`
+```
+The email could be a primary key because it uniquely identifies an individual. The disadvantage would be that email can change over time and become an orphan
+```
 
 9.Given two relations S and R below find the Cartsian Product S x R. 
 
+```
+...
+```
+
 10.Find the natural join between the Faculty and Department relations below.
 
+```
+...
+```
 
 
 S
