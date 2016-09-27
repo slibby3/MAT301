@@ -73,7 +73,9 @@ Products
 Order Table
 ------------
 | Prod_ID (PK) |
+|---|
 | Cust_ID (PK) |
+|---|
 | Quantity |  
 
 `
