@@ -44,7 +44,13 @@ Length and width are the determinants.
 
 7.Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
 
-`
+```
+Not sure what format you want this in. I drew the tables with relationships in my notebook if this is not clear enough.
+Normalization rules considered: 
+NF1 - All data was divided as much as possible. Primary keys are picked and data is grouped by entities.
+NF2 - Satisfies NF1 and all partial dependencies are removed.
+NF3 - All above are satisfied and all transitive dependencies are removed.
+
 Customer
 ------------
 | Cust_ID (PK) Auto_increment |
@@ -56,7 +62,7 @@ Customer
 | Phone |
 | Email |
 
-Zip
+Zip code
 ------------
 | Zip (PK) | 
 |---|
@@ -75,10 +81,9 @@ Order Table
 | Prod_ID (PK) |
 |---|
 | Cust_ID (PK) |
-|---|
 | Quantity |  
 
-`
+```
 
 8.For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
 
