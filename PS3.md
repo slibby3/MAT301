@@ -51,7 +51,7 @@ Length and width are the determinants.
 8.For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
 
 `
-The email could be a primary key because it uniquely identifies an individual. The disadvantage would be that email can change over time and become an orphan
+The email could be a primary key because it uniquely identifies an individual. The disadvantage would be that email can change over time (natural key) and may become an orphaned record. 
 `
 
 9.Given two relations S and R below find the Cartsian Product S x R. 
@@ -68,7 +68,7 @@ The email could be a primary key because it uniquely identifies an individual. T
 10.Find the natural join between the Faculty and Department relations below.
 
 `
-...
+The natural join between the Faculty and Departmnet relations is 
 `
 
 
