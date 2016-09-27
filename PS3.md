@@ -45,7 +45,38 @@ Length and width are the determinants.
 7.Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
 
 `
-...
+Customer
+------------
+| Cust_ID (PK) | Auto_increment
+|---|
+| Cust_First  |  
+| Cust_Last | 
+| Street_Ad | 
+| Zip (FK) |
+| Phone |
+| Email |
+
+Zip
+------------
+| Zip (PK) | 
+|---|
+| City  |  
+| State | 
+
+Products
+------------
+| Prod_ID (PK) | 
+|---|
+| Prod_name  |  
+| Prod_price | 
+
+Order Table
+------------
+| Prod_ID (PK) |
+| Cust_ID (PK) |
+|---|
+| Quantity |  
+
 `
 
 8.For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
@@ -68,7 +99,7 @@ The email could be a primary key because it uniquely identifies an individual. T
 10.Find the natural join between the Faculty and Department relations below.
 
 `
-The natural join between the Faculty and Departmnet relations is 
+The natural join between the Faculty and Departmnet relations is the "Dept" column. "Dept" is a primary key in the Department relation and a foreign key in the Faculty relation. 
 `
 
 
