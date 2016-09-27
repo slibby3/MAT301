@@ -47,7 +47,7 @@ Length and width are the determinants.
 `
 Customer
 ------------
-| Cust_ID (PK) | Auto_increment
+| Cust_ID (PK) Auto_increment |
 |---|
 | Cust_First  |  
 | Cust_Last | 
@@ -65,7 +65,7 @@ Zip
 
 Products
 ------------
-| Prod_ID (PK) | 
+| Prod_ID (PK) Auto_increment | 
 |---|
 | Prod_name  |  
 | Prod_price | 
