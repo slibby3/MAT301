@@ -31,13 +31,13 @@ Length and width are the determinants.
 5.If a relation has no duplicate data, how can you be sure there is always at least one primary key?
 
 `
-
+The primary key is the most important of all candidates, or determinants. The primary key will also, preferably, remain unique given any additional information added to the relations. To ensure this is the case, a surrogate key can be auto incremented to be independent of the data. 
 `
 
 6.Give an example of a relation.  Determine a natural key for this relation.
 
 `
-...
+An example of a relation would be insurance coverage for patients that have PCPs in a given hospital. The social security numbers of patients would be a natural key used to identify each unique patient (primary key). (This is what my dad does at Dartmouth, but on a HUGE scale with many more attributes). 
 `
 
   For question 7 - 8, Consider product *orders*.  In particular, associated with an order is: customer name (first and last), address (street, city, state, zip), phone, email, the products orders (including item, quantity, and price).  
@@ -53,7 +53,7 @@ NF1 - All data was divided as much as possible. Primary keys are picked and data
 NF2 - Satisfies NF1 and all partial dependencies are removed.
 NF3 - All above are satisfied and all transitive dependencies are removed.
 ```
-`
+
 Customer
 ------------
 | Cust_ID (PK) Auto_increment |
@@ -86,7 +86,6 @@ Order Table
 | Cust_ID (PK) |
 | Quantity |  
 
-`
 
 8.For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
 
@@ -96,14 +95,17 @@ The email could be a primary key because it uniquely identifies an individual. T
 
 9.Given two relations S and R below find the Cartsian Product S x R. 
 
-```
-1,2,3,1,1
-2,3,3,1,1
-1,2,2,2,3
-2,3,2,2,3
-1,2,2,1,5
-2,3,2,1,5
-```
+`
+Did not cover in lecture how to format. Basic concept shown below:
+`
+
+|1|2|3|1|1|
+|2|3|3|1|1|
+|1|2|2|2|3|
+|2|3|2|2|3|
+|1|2|2|1|5|
+|2|3|2|1|5|
+
 
 10.Find the natural join between the Faculty and Department relations below.
 
