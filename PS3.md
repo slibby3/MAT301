@@ -31,7 +31,7 @@ Length and width are the determinants.
 5.If a relation has no duplicate data, how can you be sure there is always at least one primary key?
 
 `
-...
+
 `
 
 6.Give an example of a relation.  Determine a natural key for this relation.
@@ -57,7 +57,12 @@ The email could be a primary key because it uniquely identifies an individual. T
 9.Given two relations S and R below find the Cartsian Product S x R. 
 
 `
-...
+1,2,3,1,1
+2,3,3,1,1
+1,2,2,2,3
+2,3,2,2,3
+1,2,2,1,5
+2,3,2,1,5
 `
 
 10.Find the natural join between the Faculty and Department relations below.
