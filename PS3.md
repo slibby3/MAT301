@@ -44,9 +44,10 @@ Length and width are the determinants.
 
 7.Create a relational data model for *orders*.  Consider applying normalization rules (discuss Monday)
 
-```
+`
 Not sure what format you want this in. I drew the tables with relationships in my notebook if this isn't clear enough.
-
+`
+```
 Normalization rules considered: 
 NF1 - All data was divided as much as possible. Primary keys are picked and data is grouped by entities.
 NF2 - Satisfies NF1 and all partial dependencies are removed.
