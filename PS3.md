@@ -37,7 +37,7 @@ The primary key is the most important of all candidates, or determinants. The pr
 6.Give an example of a relation.  Determine a natural key for this relation.
 
 `
-An example of a relation would be insurance coverage for patients that have PCPs in a given hospital. The social security numbers of patients would be a natural key used to identify each unique patient (primary key). (This is what my dad does at Dartmouth, but on a HUGE scale with many more attributes). 
+An example of a relation would be insurance coverage for patients that have PCPs in a given hospital. The social security numbers of patients would be a natural key used to identify each unique patient (primary key). 
 `
 
   For question 7 - 8, Consider product *orders*.  In particular, associated with an order is: customer name (first and last), address (street, city, state, zip), phone, email, the products orders (including item, quantity, and price).  
