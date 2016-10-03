@@ -88,9 +88,9 @@ Order Table
 
 Order Details
 ------------
-| OD_ID (PK) Auto_increment |
+| Order_ID (PK) (FK) |
 |---|
-| Product_ID (FK) |
+| Product_ID (PK) (FK) |
 | Quantity |  
 
 8.For customer, could email be used as a primary key?  If so, state why.  Also, if possible to use as a primary key, discuss any disadvantages of using email as a primary key.
